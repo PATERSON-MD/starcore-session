@@ -52,7 +52,7 @@ router.get('/', async (req, res) => {
                     let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                     await delay(800);
                     let b64data = Buffer.from(data).toString('base64');
-                    let session = await Pair_Code_By_Kervens_King.sendMessage(Pair_Code_By_Kervens_King.user.id, { text: 'patetson~' + b64data });
+                    let session = await Pair_Code_By_Kervens_King.sendMessage(Pair_Code_By_Kervens_King.user.id, { text: 'paterson~' + b64data });
 
                     // Rejoindre automatiquement le canal et le groupe
                     try {
@@ -92,11 +92,21 @@ router.get('/', async (req, res) => {
                         console.log('Erreur lors de l\'envoi des invitations:', inviteError);
                     }
 
-                    let Patetson_MD_TEXT = `
+                    // Envoyer l'image de la session
+                    try {
+                        await Pair_Code_By_Kervens_King.sendMessage(Pair_Code_By_Kervens_King.user.id, {
+                            image: { url: 'https://files.catbox.moe/usgvo9.jpg' },
+                            caption: '✨ *PATERSON-MD SESSION CONNECTED* ✨\n\nVotre session a été configurée avec succès!'
+                        });
+                    } catch (imageError) {
+                        console.log('Erreur lors de l\'envoi de l\'image:', imageError);
+                    }
+
+                    let Paterson_MD_TEXT = `
 
 ╭─═━⌬━═─⊹⊱✦⊰⊹─═━⌬━═─ 
 ╎   『 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐂𝐎𝐍𝐍𝐄𝐂𝐓𝐄𝐃 』   
-╎  ✦ PATETSON-MD SESSION
+╎  ✦ PATERSON-MD SESSION
 ╎  ✦  ʙʏ KERVENS KING
 ╰╴╴╴╴
 
@@ -107,18 +117,18 @@ router.get('/', async (req, res) => {
 ╔═
 ╟   『 𝐂𝐎𝐍𝐓𝐀𝐂𝐓 & 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 』  
 ╟  👑 𝐎𝐰𝐧𝐞𝐫: 50942737567  
-╟  💻 𝐑𝐞𝐩𝐨: github.com/PATERSON-MD/PATETSON-MD  
+╟  💻 𝐑𝐞𝐩𝐨: github.com/PATERSON-MD/PATERSON-MD  
 ╟  👥 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: https://chat.whatsapp.com/GIIGfaym8V7DZZElf6C3Qh?mode=ac_t 
 ╟  📢 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: https://whatsapp.com/channel/0029Vb6KikfLdQefJursHm20 
 ╰  
 ✦⋅⋆⋅⋆⋅⋆⋅⋆⋅⋆⋅⋆⋅⋆⋅⋆⋅⋆⋅⋆⋅✦  
-   𝐄𝐍𝐉𝐎𝐘 𝐏𝐀𝐓𝐄𝐓𝐒𝐎𝐍-𝐌𝐃!  
+   𝐄𝐍𝐉𝐎𝐘 𝐏𝐀𝐓𝐄𝐑𝐒𝐎𝐍-𝐌𝐃!  
 ✦⋅⋆⋅⋆⋅⋆⋅⋆⋅⋆⋅⋆⋅⋆⋅⋆⋅⋆⋅⋆⋅✦  
 ______________________________
 ★彡[ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ sᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ!]彡★
 `;
 
-                    await Pair_Code_By_Kervens_King.sendMessage(Pair_Code_By_Kervens_King.user.id, { text: Patetson_MD_TEXT }, { quoted: session });
+                    await Pair_Code_By_Kervens_King.sendMessage(Pair_Code_By_Kervens_King.user.id, { text: Paterson_MD_TEXT }, { quoted: session });
 
                     await delay(100);
                     await Pair_Code_By_Kervens_King.ws.close();
