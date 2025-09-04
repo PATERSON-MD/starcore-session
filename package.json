@@ -1,5 +1,5 @@
 {
-    "description": "starcore-session",
+    "description": "starcore-sessionn",
     "main": "./index.js",
   "engines" : { 
     "npm" : ">=9.7.2",
@@ -8,12 +8,12 @@
     "scripts": {
     "start": "node index.js"
   },
-  "author": "Malvin King",
+  "author": "Kervens King",
   "license": "GPL-3.0 license",
   "dependencies": {
     "baileys-pro": "latest",
     "maher-zubair-baileys": "^6.6.5",
-   "@whiskeysockets/baileys": "github:XdKing2/Malvin-Baileys",
+   "@whiskeysockets/baileys": "github:PATERSON-MD/Kervens-Baileys",
     "qrcode": "^1.5.3",
     "awesome-phonenumber": "^2.64.0",
     "pino": "^8.1.0",
