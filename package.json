@@ -1,28 +1,44 @@
 {
-    "description": "starcore-sessionn",
-    "main": "./index.js",
-  "engines" : { 
-    "npm" : ">=9.7.2",
-    "node" : ">=20.0.0"
-    },
-    "scripts": {
-    "start": "node index.js"
+  "name": "paterson-md",
+  "description": "PATERSON-MD WhatsApp Bot by Kervens King",
+  "main": "./index.js",
+  "engines": {
+    "npm": ">=9.7.2",
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Kervens King",
-  "license": "GPL-3.0 license",
+  "license": "GPL-3.0",
   "dependencies": {
-    "baileys-pro": "latest",
-    "maher-zubair-baileys": "^6.6.5",
-   "@whiskeysockets/baileys": "github:PATERSON-MD/Kervens-Baileys",
+    "@whiskeysockets/baileys": "^6.4.0",
     "qrcode": "^1.5.3",
     "awesome-phonenumber": "^2.64.0",
-    "pino": "^8.1.0",
-    "phone" : "3.1.30",
-    "body-parser": "^1.20.1",
+    "pino": "^8.15.1",
+    "phone": "^3.1.30",
+    "body-parser": "^1.20.2",
     "pastebin-js": "^1.0.6",
-    "express": "^4.18.1",
+    "express": "^4.18.2",
     "path": "^0.12.7",
-    "baileys-elite" : "latest",
-    "jimp": "^0.16.13"
-   }
+    "jimp": "^0.16.13",
+    "axios": "^1.5.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "whatsapp-bot",
+    "paterson-md",
+    "baileys",
+    "multi-device"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KervensKing/PATERSON-MD"
+  }
 }
