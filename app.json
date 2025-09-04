@@ -1,8 +1,8 @@
 
 {
-    "name": "star",
+    "name": "paterspn-md",
     "description": "A whatsApp bot based on Baileysjs linrary (Ts+Js) with Multi Device support",
-    "repository": "https://github.com/XdKing2/star-xd",
+    "repository": "https://github.com/PATERSON-MD/PATERSON-MD",
     "logo": "https://i.ibb.co/FLDpmJqt/malvin-xd.jpg",
     "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
     "buildpacks": [
