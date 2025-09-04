@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starcore pairing site Dashboard</title>
+  <title>PATERSON-MD Pairing Site Dashboard</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
     :root {
-      --primary: linear-gradient(135deg, #FF4500, #228B22);
-      --bg: #D5691E;
+      --primary: linear-gradient(135deg, #0066ff, #00ccff);
+      --bg: #0a1128;
       --glass: rgba(255, 255, 255, 0.05);
       --text: #ffffff;
       --muted: #708090;
-      --highlight: #FF1493;
+      --highlight: #00ccff;
       --radius: 16px;
       --blur: 12px;
       --transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-      --glow: 0 0 15px rgba(0, 212, 255, 0.3);
+      --glow: 0 0 15px rgba(0, 204, 255, 0.3);
     }
 
     * {
@@ -34,7 +34,8 @@
       position: relative;
       overflow-x: hidden;
       color: var(--text);
-      padding: 80px 20px 120px; /* Space for header and music player */
+      padding: 80px 20px 120px;
+      background: linear-gradient(135deg, var(--bg) 0%, #050a1d 100%);
     }
 
     /* Background with blur effect */
@@ -48,6 +49,7 @@
       z-index: -3;
       filter: blur(8px) brightness(0.6);
       transform: scale(1.1);
+      opacity: 0.5;
     }
 
     /* Header with logo */
@@ -77,7 +79,7 @@
       width: 40px;
       border-radius: 50%;
       object-fit: cover;
-      border: 2px solid rgba(0, 212, 255, 0.3);
+      border: 2px solid rgba(0, 204, 255, 0.3);
       box-shadow: var(--glow);
     }
 
@@ -171,7 +173,7 @@
     .input-container input:focus {
       outline: none;
       border-color: var(--highlight);
-      box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.2);
+      box-shadow: 0 0 0 2px rgba(0, 204, 255, 0.2);
     }
 
     .input-container button {
@@ -217,8 +219,8 @@
     }
 
     #copy-code:hover {
-      background: rgba(0, 212, 255, 0.1);
-      box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+      background: rgba(0, 204, 255, 0.1);
+      box-shadow: 0 0 15px rgba(0, 204, 255, 0.2);
     }
 
     /* Music player - Positioned below pairing container */
@@ -284,6 +286,29 @@
       color: var(--muted);
     }
 
+    /* Support section */
+    .support-section {
+      background: var(--glass);
+      backdrop-filter: blur(var(--blur));
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+      margin-top: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .support-section h3 {
+      color: var(--highlight);
+      margin-bottom: 1rem;
+    }
+
+    .support-contact {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
     /* Responsive design */
     @media (max-width: 768px) {
       .header {
@@ -306,7 +331,7 @@
         width: 100%;
       }
       
-      .music-player {
+      .music-player, .support-section {
         padding: 1rem;
       }
     }
@@ -314,13 +339,13 @@
 </head>
 <body>
   <!-- Blurred Background Image -->
-  <img src="https://i.ibb.co/sdj3NjMD/malvin-xd.jpg" alt="Trashcore bot Background" class="background-image">
+  <img src="https://files.catbox.moe/usgvo9.jpg" alt="PATERSON-MD Background" class="background-image">
 
   <!-- Header with Logo -->
   <header class="header">
     <div class="logo-container">
-      <img src="https://i.ibb.co/FLDpmJqt/malvin-xd.jpg" alt="Starcore bot Logo" class="logo-img">
-      <div class="logo-text">Since-𝟐𝟎24</div>
+      <img src="https://files.catbox.moe/usgvo9.jpg" alt="PATERSON-MD Logo" class="logo-img">
+      <div class="logo-text">PATERSON-MD</div>
     </div>
     
     <!-- Battery Indicator -->
@@ -335,11 +360,11 @@
     <!-- Pairing Box -->
     <div class="box">
       <h2>PAIRING CODE</h2>
-      <h5>STAR XD </h5>
-      <p>Please enter your number with country code e.g 263xxxxxxxx</p>
+      <h5>PATERSON-MD BOT</h5>
+      <p>Please enter your number with country code e.g 509xxxxxxxx</p>
       
       <div class="input-container">
-        <input type="number" id="number" placeholder="put you number" required>
+        <input type="number" id="number" placeholder="Enter your number" required>
         <button id="submit">REQUEST CODE</button>
       </div>
       
@@ -350,16 +375,25 @@
       <button id="copy-code" onclick="copyCode()">COPY YOUR CODE</button>
     </div>
 
+    <!-- Support Section -->
+    <div class="support-section">
+      <h3>NEED HELP?</h3>
+      <p>Contact our support team for assistance with pairing</p>
+      <div class="support-contact">
+        <i class="fab fa-whatsapp"></i> +509 42 737 567
+      </div>
+    </div>
+
     <!-- Music Player - Positioned below pairing container -->
     <div class="music-player">
-      <h3>PLAY NOW</h3>
-      <div class="music-title">PLAY SONG</div>
-      <div class="music-subtitle">by XD devs</div>
+      <h3>NOW PLAYING</h3>
+      <div class="music-title">PATERSON-MD THEME</div>
+      <div class="music-subtitle">by Kervens King</div>
       <button class="play-btn" onclick="togglePlay()">
         <i class="fas fa-pause" id="play-icon"></i>
       </button>
       <div class="time-display" id="time1">0:00</div>
-      <div class="music-subtitle">Dev Malvin</div>
+      <div class="music-subtitle">PATERSON-MD Official</div>
       <audio id="audio1" src="https://files.catbox.moe/pjlpd7.mp3" loop></audio>
     </div>
   </div>
@@ -398,14 +432,14 @@
       e.preventDefault();
       
       if (!numberInput.value) {
-        pairResult.innerHTML = '<p style="color:var(--highlight)">Enter your WhatsApp number without Country Code</p>';
+        pairResult.innerHTML = '<p style="color:var(--highlight)">Enter your WhatsApp number with Country Code</p>';
         return;
       }
       
       const cleanNumber = numberInput.value.replace(/[^0-9]/g, "");
       
-      if (cleanNumber.length < 11) {
-        pairResult.innerHTML = '<p style="color:#ff5555">Invalid Number</p>';
+      if (cleanNumber.length < 9) {
+        pairResult.innerHTML = '<p style="color:#ff5555">Invalid Number. Please include country code</p>';
         return;
       }
       
@@ -414,7 +448,7 @@
       const digits = cleanNumber.split('');
       digits.forEach((digit, index) => {
         formattedNumber += digit;
-        if (index === 2 || index === 7) {
+        if (index === 2 || index === 5) {
           formattedNumber += " ";
         }
       });
@@ -428,6 +462,7 @@
       copyCodeBtn.style.display = "none";
       
       try {
+        // This would typically call your backend API
         const { data } = await axios(`/code?number=${cleanNumber}`);
         const code = data.code || "Service Unavailable";
         
@@ -439,7 +474,7 @@
         copyCodeBtn.style.display = "inline-block";
         waitingMessage.style.display = "none";
       } catch (error) {
-        pairResult.innerHTML = '<p style="color:#ff5555">Error getting pairing code</p>';
+        pairResult.innerHTML = '<p style="color:#ff5555">Error getting pairing code. Please try again.</p>';
         waitingMessage.style.display = "none";
       }
     });
@@ -535,4 +570,4 @@
     });
   </script>
 </body>
-  </html>
+</html>
