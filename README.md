@@ -1,113 +1,236 @@
-# 🔥 Starcore Session
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 PATERSON-MD Session</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fira+Code:wght@300;400;500&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #000000, #1a1a2e);
+            color: #00ff00;
+            font-family: 'Fira Code', monospace;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .typing-animation {
+            font-family: 'Black Ops One', cursive;
+            font-size: 3.5rem;
+            color: #00ff00;
+            margin: 30px 0;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #00ff00;
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.6);
+        }
+        
+        .badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .badge {
+            padding: 12px 25px;
+            background: linear-gradient(45deg, #00ff00, #008800);
+            color: black;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            border: 2px solid #00ff00;
+        }
+        
+        .badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 255, 0, 0.4);
+        }
+        
+        .features {
+            background: rgba(0, 255, 0, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid #00ff00;
+            margin: 40px 0;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            border: 1px solid #00ff00;
+        }
+        
+        .feature h3 {
+            color: #00ff00;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 255, 0, 0.1);
+            border-radius: 15px;
+            border: 1px solid #00ff00;
+        }
+        
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #00ff00; }
+            50% { text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00; }
+            100% { text-shadow: 0 0 5px #00ff00; }
+        }
+        
+        .glow-text {
+            animation: glow 2s ease-in-out infinite;
+        }
+        
+        @media (max-width: 768px) {
+            .typing-animation {
+                font-size: 2rem;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="typing-animation glow-text">🔥 PATETSON-MD SESSION</h1>
+            <p>✨ Ultra-Light Pair Session Generator for Baileys Bots ✨</p>
+        </div>
 
-**Ultra-Light Pair Session Generator for Baileys Bots**  
-✨ *One-click authentication • Encrypted sessions • Cross-platform*
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=70&pause=500&color=00BB00&center=true&width=1150&height=200&lines=PLEASE-FORK-STAR-SESSION-REPO" alt="Typing SVG" /></a>
-  </div>
-<a><img src='https://i.ibb.co/dsw0TXmj/malvin-xd.jpg?'/></a>
+        <div class="gallery">
+            <img src="https://files.catbox.moe/usgvo9.jpg" alt="Session Image 1">
+            <img src="https://files.catbox.moe/grrevg.jpg" alt="Session Image 2">
+            <img src="https://files.catbox.moe/esh0om.jpg" alt="Session Image 3">
+        
+        </div>
 
-<p align="center">
-  <a href="https://github.com/XdKing2"><img title="Developer" src="https://img.shields.io/badge/Author-Malvin%20King-FF00FF.svg?style=big-square&logo=github" /></a>
-</p>
+        <div class="badges">
+            <a href="https://github.com/Kervens-King" class="badge">👑 Developer: Kervens King</a>
+            <a href="https://whatsapp.com/channel/0029Vb6KikfLdQefJursHm20" class="badge">📢 WhatsApp Channel</a>
+            <a href="https://chat.whatsapp.com/GIIGfaym8V7DZZElf6C3Qh?mode=ac_t" class="badge">👥 WhatsApp Group</a>
+        </div>
 
-<div align="center">
+        <div class="stats">
+            <div class="stat">
+                <h3>🚀 Fast</h3>
+                <p>Lightning Speed</p>
+            </div>
+            <div class="stat">
+                <h3>🔒 Secure</h3>
+                <p>Encrypted Sessions</p>
+            </div>
+            <div class="stat">
+                <h3>✅ Reliable</h3>
+                <p>99.9% Uptime</p>
+            </div>
+        </div>
 
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=6000&color=00FF00&background=000000&center=true&vCenter=true&width=600&lines=⚡+STAR+CORE+BETTER+OPTION;🔥+THE+MOST+POWERFUL+WHATSAPP+SESSION;💻+DEVELOPER+BY+MR+MALVIN;🚀+STARCORE-SESSION+SOLUTIONS;🌈+FAST+⚡+SECURE+🔒+RELIABLE+✅" alt="Typing Animation">
-</h1>
-  
-[![WhatsApp Channel](https://img.shields.io/badge/Join-WhatsApp%20Channel-9ACD32?style=big-square&logo=whatsapp)](https://whatsapp.com/channel/0029VbB3YxTDJ6H15SKoBv3S)
-</div>
+        <div class="features">
+            <h2 class="glow-text" style="text-align: center; margin-bottom: 30px;">⭐ FEATURES</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Base64 Session Support</h3>
+                    <p>patetson~ prefixed sessions</p>
+                </div>
+                <div class="feature">
+                    <h3>Auto-Restore</h3>
+                    <p>Automatic reconnection</p>
+                </div>
+                <div class="feature">
+                    <h3>Encrypted Storage</h3>
+                    <p>Secure credential management</p>
+                </div>
+                <div class="feature">
+                    <h3>Dual Auth</h3>
+                    <p>QR Code + Pairing Code</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
----------
-
-
-<p align="center">
-<a href="https://github.com/XdKing2/starcore-session"><img title="PUBLIC-SESSION" src="https://img.shields.io/static/v1?label=Language&message=English&style=square&color=darkpink"></a> &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=starcore-session&label=VIEWS&style=square&color=blue" />
-</p>
-</p> 
-
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Node.js-18+-green?logo=node.js" alt="Node Version">
-  <img src="https://img.shields.io/badge/Baileys-Compatible-blue?logo=whatsapp" alt="Baileys Compatible">
-  <img src="https://img.shields.io/badge/License-MIT-red" alt="License">
-</p>
-
----
-
-## 🚀 Features
-- **Base64 Session Support** (`starcore~` prefixed)  
-- **Auto-Restore** after disconnections  
-- **Encrypted Credential Storage**  
-- **QR Code + Pairing Code Fallback**  
-
-
-
-## Implementation Example
-```
-const fs = require('fs');
-const path = require('path');
-
-// Session directory setup
-const sessionDir = path.join(__dirname, "./sessions");
-const credsPath = path.join(sessionDir, "creds.json");
-
-if (!fs.existsSync(sessionDir)) {
-  fs.mkdirSync(sessionDir, { recursive: true });
-}
-
-/**
- * Decodes and saves a base64 session (starcore~ prefixed)
- * @param {string} base64Session - Format: "starcore~BASE64_DATA"
- */
-async function loadBase64Session(base64Session) {
-  try {
-    if (!base64Session.startsWith("starcore~")) {
-      throw new Error("Invalid format: Session must start with 'starcore~'");
-    }
-
-    const base64Data = base64Session.replace("starcore~", "");
-    
-    // Validate base64
-    if (!/^[A-Za-z0-9+/=]+$/.test(base64Data)) {
-      throw new Error("Invalid base64 characters detected");
-    }
-
-    // Decode and parse
-    const decodedData = Buffer.from(base64Data, "base64");
-    const sessionData = JSON.parse(decodedData.toString("utf-8"));
-
-    // Save to file
-    fs.writeFileSync(credsPath, decodedData);
-    console.log("✅ Session decoded and saved successfully");
-    return sessionData;
-
-  } catch (error) {
-    console.error("❌ Base64 session error:", error.message);
-    return null;
-  }
-}
-
-// Usage Example:
-const config = {
-  SESSION_ID: "starcore~eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." // Your base64 session
-};
-
-if (config.SESSION_ID) {
-  loadBase64Session(config.SESSION_ID).then(session => {
-    if (!session) {
-      console.log("🔄 Falling back to QR/pairing code");
-      // Initiate normal auth flow here
-    }
-  });
-}
-```
-
-
-## 📦 Installation
-```bash
-git clone https://github.com/XdKing2/starcore-session.git
-cd starcore-session
-npm install
+    <script>
+        // Typing animation effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const texts = [
+                "⚡ PATERSON MD BETTER OPTION",
+                "🔥 THE MOST POWERFUL WHATSAPP SESSION", 
+                "💻 DEVELOPER BY KERVENS KING",
+                "🚀 PATERSON MD SESSION SOLUTIONS",
+                "🌈 FAST ⚡ SECURE 🔒 RELIABLE ✅"
+            ];
+            
+            let currentText = 0;
+            const typingElement = document.querySelector('.typing-animation');
+            
+            function typeWriter() {
+                if (currentText < texts.length) {
+                    typingElement.textContent = texts[currentText];
+                    currentText = (currentText + 1) % texts.length;
+                    setTimeout(typeWriter, 3000);
+                }
+            }
+            
+            typeWriter();
+        });
+    </script>
+</body>
+</html>
